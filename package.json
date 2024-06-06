@@ -1,15 +1,24 @@
 {
-  "name": "npm-index",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "chalk": "^5.3.0",
-    "https": "^1.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Olena Plaskonis",
-  "license": "ISC"
+	"name": "npm-index",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"https": "^1.0.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky",
+		"lint": "npx eslint ."
+	},
+	"author": "Olena Plaskonis",
+	"license": "ISC",
+	"devDependencies": {
+		"@eslint/js": "^9.4.0",
+		"eslint": "^9.4.0",
+		"globals": "^15.3.0",
+		"husky": "^9.0.11",
+		"prettier": "3.3.0"
+	}
 }
